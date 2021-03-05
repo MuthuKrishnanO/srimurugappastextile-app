@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.BillingActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appbar_home"
+        android:layout_height="50dp">
+        <androidx.appcompat.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/menuTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.7"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:gravity="center"
+                    android:fontFamily="@font/secular_one"
+                    android:textColor="@color/white"
+                    android:layout_height="match_parent"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/spinnermain"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/appbar_home"
+        android:background="@drawable/rect_edit_text"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/source_sans_pro"
+            android:text="@string/selectthescheme"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/Subheader_text"
+            android:textStyle="bold" />
+
+        <com.techface.srimurugapa.scheme.Helper.SearchableSpinner
+            android:id="@+id/spin_cart"
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scrollBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/spinnermain"
+        android:scrollbars="vertical">
+
+        <ScrollView
+            android:id="@+id/scrollview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+
+            android:scrollbars="vertical">
+
+            <TableLayout
+                android:id="@+id/table_layout_resume"
+                android:stretchColumns="*"
+                android:layout_width="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:layout_height="200dp">
+
+            </TableLayout>
+
+        </ScrollView>
+
+    </HorizontalScrollView>
+    <Button
+        android:layout_margin="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/downloadpdf"
+        android:text="Download PDF"
+        android:textAllCaps="true"
+        android:drawableLeft="@drawable/ic_download"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:background="@drawable/adapter_background"
+        android:layout_below="@+id/horizontal_scrollBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <ProgressBar
+        android:id="@+id/pb_resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

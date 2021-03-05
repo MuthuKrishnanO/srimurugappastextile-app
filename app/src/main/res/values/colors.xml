@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#CD2027</color>
+    <color name="colorPrimaryDark">#9F171D</color>
+    <color name="colorAccent">#00A5FF</color>
+
+    <color name="primaryColor">#7986cb</color>
+    <color name="primaryLightColor">#aab6fe</color>
+    <color name="primaryDarkColor">#49599a</color>
+    <color name="secondaryColor">#3f51b5</color>
+    <color name="secondaryLightColor">#757de8</color>
+    <color name="secondaryDarkColor">#002984</color>
+
+    <color name="secondaryTextColor">#000000</color>
+    <color name="grey">#D3CECE</color>
+    <color name="DarkgreyColor">#848080</color>
+    <color name="greyColor">#afafaf</color>
+    <color name="greenaccent1">#427fab</color>
+
+
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#CD2027</color>
+    <color name="loginBkColor">#f0f0f0</color>
+
+    <!--colros for card-->
+    <color name="whiteCardColor">#fff</color>
+
+
+
+
+
+    <color name="btn_color">#1a237e</color>
+    <color name="activitybackground">#f0f0f9</color>
+
+
+
+    <color name="colorSecondary">#f48fb1</color>
+    <color name="colorSecondaryLight">#ffc1e3</color>
+    <color name="colorSecondaryDark">#bf5f82</color>
+    <color name="textPrimary">#000000</color>
+    <color name="textSecondary">#000000</color>
+    <color name="tabBg">#FF8000</color>
+    <!--<color name="table_row_bg">#E3F2FD</color>-->
+    <color name="table_row_bg">#E3F2FD</color>
+    <color name="table_header_bg">#499ee2</color>
+    <color name="newcol"> #43cea2 </color>
+    <color name="newcol1">#0b76e6</color>
+    <color name="cardtune">#cedfe9</color>
+
+    <color name="green">#07410a</color>
+
+    <color name="violet">#2f3984</color>
+
+    <color name="red">#ff0404</color>
+
+    <color name="yellow">#FFD403</color>
+
+    <color name="blue">#14a1f2</color>
+    <color name="maroon">#993232</color>
+
+    <color name="black">#131313</color>
+
+    <color name="pink">#b70457</color>
+
+    <color name="brown">#5e0101</color>
+
+
+    <color name="background">#1a7e97</color>
+    <color name="backgroundvalue">#1DA6B3</color>
+
+    <color name="white">@android:color/white</color>
+    <color name="lightgreen">@android:color/holo_green_light</color>
+    <color name="greys">@android:color/white</color>
+    <color name="Brightgreen">#0C9502</color>
+
+    <color name="greysin">#bddfe4</color>
+
+
+    <color name="lightblue">#232323</color>
+    <color name="lightping">#f5c6174e</color>
+    <color name="backcard">#84f7e0d2</color>
+
+    <color name="GREYCOLOR">#7b7b7b</color>
+
+
+    <!--graph-->
+    <color name="graph1">#ffffbb33</color>
+    <color name="lightorange">#ea9832</color>
+
+    <color name="startblue">#000000</color>
+
+
+
+    <!--subscriber app all color -->
+
+
+    <!--backgroundcolor-->
+    <color name="sub_background">#e4e4ec</color>
+
+
+    <!--homeActivity name text color-->
+    <color name="sub_name">#847f7f</color>
+    <color name="lightRed">#cc2323</color>
+
+
+
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+
+
+</resources>

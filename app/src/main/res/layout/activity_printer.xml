@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toolbarPayment"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbarpayment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/paymenttitle"
+                android:layout_width="match_parent"
+                android:text="@string/BillGenerator"
+                android:textAllCaps="true"
+
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/secular_one"
+                />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scrollBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/toolbarPayment"
+
+        android:scrollbars="vertical">
+
+        <ScrollView
+            android:id="@+id/scrollview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+
+            android:scrollbars="vertical">
+
+            <TableLayout
+                android:id="@+id/table_layout_resume"
+                android:stretchColumns="*"
+                android:layout_width="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:layout_height="200dp">
+
+            </TableLayout>
+
+        </ScrollView>
+
+    </HorizontalScrollView>
+    <LinearLayout
+        android:layout_above="@+id/ll_bootom"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/activitybackground"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:weightSum="3"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:textSize="20dp"
+                android:textColor="@color/red"
+
+                android:fontFamily="@font/secular_one"
+                android:text="@string/sumoftotal"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="@font/secular_one"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/mSumofTotal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:textAlignment="textEnd"
+
+                android:textColor="@color/black"
+                android:fontFamily="@font/secular_one"
+
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:weightSum="3"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:textSize="20dp"
+                android:textColor="@color/red"
+
+                android:fontFamily="@font/secular_one"
+                android:text="@string/Totalpaidamount"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="@font/secular_one"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/mPayAmount"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:textAlignment="textEnd"
+
+                android:textColor="@color/black"
+                android:fontFamily="@font/secular_one"
+
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:weightSum="3"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:textSize="20dp"
+                android:textColor="@color/red"
+
+                android:fontFamily="@font/secular_one"
+                android:text="@string/Changedue"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="@font/secular_one"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/mChangedue"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:textAlignment="textEnd"
+
+                android:textColor="@color/black"
+                android:fontFamily="@font/secular_one"
+
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+<LinearLayout
+    android:id="@+id/ll_bootom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:background="@color/activitybackground"
+    android:layout_margin="15dp"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/Scan"
+        android:background="@color/colorPrimary"
+        android:layout_width="0dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/secular_one"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:text="Scan">
+
+    </Button>
+
+    <Button
+        android:id="@+id/mPrint"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/secular_one"
+        android:background="@color/colorPrimary"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        android:text="Print">
+
+    </Button>
+
+    <Button
+        android:visibility="gone"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/secular_one"
+        android:id="@+id/dis"
+        android:background="@color/colorPrimary"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+
+        android:text="Dissable">
+
+    </Button>
+
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.techface.srimurugapa.scheme">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--
+   <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_murugapa_round"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_murugapa_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.AgentLoginActivity"></activity>
+        <activity android:name=".Activity.sliderActivity" />
+        <activity android:name=".Activity.LoginOtpVerification" />
+        <activity android:name=".Activity.CustomizeAppMainActivity" />
+        <activity android:name=".Activity.ExitingpaytmActivity" />
+        <activity android:name=".Activity.paytmActivity" />
+        <activity android:name=".Activity.GoldGramActivity" />
+        <activity android:name=".Activity.BillingActivity" />
+        <activity android:name=".Activity.SettingActivty" />
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.ExitingPayActivity" />
+        <activity android:name=".Activity.RazorpayActivity" />
+        <activity android:name=".Activity.HomeMainActivity" />
+        <activity android:name=".Activity.VerifyPhoneActivity" />
+        <activity android:name=".Activity.OtpActivity" />
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.PermissionsActivity" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:theme="@style/loginActivty" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.techface.srimurugapa.scheme.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Activity.HomeActivity" />
+        <activity android:name=".Activity.DeviceListActivity" />
+        <activity android:name=".Activity.Printer" />
+        <activity
+            android:name=".Activity.PaymentActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".Activity.DailyReport" /> <!-- Firebase Notifications -->
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

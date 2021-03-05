@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DailyReport">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/lcoheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/secular_one"
+                android:gravity="center"
+                android:text="@string/rechargehistory1"
+                android:textAllCaps="true"
+
+                android:textColor="@android:color/black"
+                />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Main_ll"
+        android:layout_below="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/emptyrec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="4dp"
+        android:layout_below="@id/Main_ll"
+        android:layout_marginEnd="4dp"
+        android:weightSum="3"
+        >
+
+        <EditText
+            android:id="@+id/et_online_startdate"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/searchbar"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/source_sans_pro"
+
+            android:gravity="top"
+            android:hint="@string/btn_start_date"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/et_online_enddate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColorHint="@color/primaryDarkColor"
+            android:hint="@string/btn_end_date"
+            android:gravity="top"
+
+            android:fontFamily="@font/source_sans_pro"
+            android:focusable="false"
+            android:textAlignment="center"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/searchbar"
+            android:layout_gravity="center"
+            android:focusableInTouchMode="true"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/Btn_online_Rechargehistory_Btn"
+            android:background="@drawable/button_bg_smartcard"
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="30dp"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:fontFamily="@font/source_sans_pro"
+            android:gravity="center"
+
+            android:text="@string/btn_get" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/Tv_EmptyListonline"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/emptyrec"
+        android:background="#cedfe9"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="66dp"
+        android:visibility="gone"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        android:fontFamily="@font/secular_one"
+        android:text="NO LIST AVAILABLE" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_online_Reportrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/white"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/Tv_EmptyListonline"
+        />
+
+</RelativeLayout>

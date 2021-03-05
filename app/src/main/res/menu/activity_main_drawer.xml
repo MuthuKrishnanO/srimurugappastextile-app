@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/nav_home" />
+
+        <item
+            android:id="@+id/nav_photos"
+            android:icon="@drawable/ic_write"
+            android:title="@string/BillGenerator" />
+        <!--<item
+            android:id="@+id/gram"
+            android:icon="@drawable/ic_baseline_group_work_24"
+            android:title="@string/myGoldgramDetails" />
+
+        <item
+            android:id="@+id/cutomize"
+            android:icon="@drawable/ic_customer"
+            android:title="@string/customize" />
+-->
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/title_history" />
+        <item
+             android:id="@+id/nav_movies"
+             android:icon="@drawable/ic_power_button_outline"
+             android:title="@string/toolbar_logout" />
+
+        <!--   <item
+              android:id="@+id/nav_notifications"
+              android:icon="@drawable/ic_notifications_black_24dp"
+              android:title="@string/nav_notifications" />
+
+          <item
+              android:id="@+id/nav_settings"
+              android:icon="@drawable/ic_settings_black_24dp"
+              android:title="@string/nav_settings" />-->
+    </group>
+
+
+
+</menu>

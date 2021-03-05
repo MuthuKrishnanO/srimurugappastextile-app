@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "454258725847",
+    "project_id": "srimurugapa",
+    "storage_bucket": "srimurugapa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454258725847:android:7ea46049d71ea65274b192",
+        "android_client_info": {
+          "package_name": "com.techface.srimurugapa.scheme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454258725847-7r452d7r3imshra2ckget2sgchalaa59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA84TrF9d5Z6jQ9NVYUWq9Zw32_OfpvvOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454258725847-7r452d7r3imshra2ckget2sgchalaa59.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

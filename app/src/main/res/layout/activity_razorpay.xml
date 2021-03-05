@@ -1,0 +1,477 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    >
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:padding="4dp"
+       />
+
+
+    <TextView
+        android:id="@+id/Tv_online_opername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="WELCOME"
+        android:textSize="@dimen/text_Content"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_linearlayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/Tv_online_opername"
+        android:layout_gravity="center"
+        android:padding="19dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_bg_smartcard"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/Tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/secular_one"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#ffffff"
+
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Tv_mini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/ll_linearlayout"
+
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        />
+
+
+    <EditText
+        android:id="@+id/orderamount"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="9dp"
+
+        android:editable="false"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:inputType="number"
+        android:backgroundTint="@null"
+        android:background="@drawable/searchbar"
+        android:gravity="start"
+        android:layout_below="@id/Tv_mini"
+
+        android:textColor="#122592"
+        android:textSize="@dimen/Subheader_text"
+        />
+
+    <CheckBox
+        android:id="@+id/CB_terms"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="4dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:inputType="number"
+        android:gravity="start"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/orderamount"
+        android:text="@string/i_accept_terms_and_conditionsonline"
+        android:textColor="@color/colorPrimary"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll_newlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:padding="4dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/CB_terms"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/Tv_terms"
+            android:fontFamily="@font/source_sans_pro"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/terms_and_conditionsonline"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <TextView
+            android:id="@+id/Tv_privacypolicy"
+            android:fontFamily="@font/source_sans_pro"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/privacy_policyonline"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_refund"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_newlayout"
+        android:weightSum="2"
+        android:layout_marginStart="10dp"
+        android:padding="4dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/Tv_refundpolicy"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/source_sans_pro"
+            android:text="@string/refund_policyonline"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/Tv_cancelpolicy"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/cancellation_policyonline"
+            android:fontFamily="@font/source_sans_pro"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/startpayment"
+        android:background="@color/greyColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:enabled="false"
+        android:fontFamily="@font/source_sans_pro"
+        android:textColor="@android:color/white"
+
+        android:text="@string/rechargeonline" />
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:background="#FFF9F9"
+        android:focusableInTouchMode="true"
+        >
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:padding="4dp"
+            android:src="@drawable/ridsys_logo_white" />
+
+        <TextView
+            android:id="@+id/Tv_online_opername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WELCOME,Ganessin.N"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_below="@id/image_logo"
+            android:textStyle="bold"
+            android:fontFamily="@font/secular_one"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/ll_linearlayout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/Tv_online_opername"
+            android:layout_gravity="center"
+            android:padding="19dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/button_bg_smartcard"
+            android:layout_height="wrap_content">
+
+
+            &lt;!&ndash;<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/secular_one"
+                android:textStyle="bold"
+                android:text="@string/current_balanceonline"
+                android:textAllCaps="true"
+                android:textColor="@color/lightgreen1"
+                android:textSize="@dimen/ProfileInfo_Text" />&ndash;&gt;
+
+            <include layout="@layout/settings_view_divider" />
+
+            <TextView
+                android:id="@+id/Tv_Operbalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/secular_one"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Tv_mini"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/secular_one"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:layout_below="@id/Tv_online_opername"
+            android:text="@string/PAY"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ProfileInfo_Text" />
+
+
+        <EditText
+            android:id="@+id/et_online_amount"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="9dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/secular_one"
+            android:inputType="number"
+            android:backgroundTint="@null"
+            android:background="@drawable/searchbar"
+            android:gravity="start"
+            android:layout_below="@id/Tv_mini"
+            android:hint="@string/recharge_amountonline"
+            android:textColor="#122592"
+            android:textSize="@dimen/Subheader_text"
+            />
+
+        <CheckBox
+            android:id="@+id/CB_terms"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:fontFamily="@font/secular_one"
+            android:inputType="number"
+            android:gravity="start"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/et_online_amount"
+            android:text="@string/i_accept_terms_and_conditionsonline"
+            android:textColor="@color/DarkgreyColor"
+            android:textSize="@dimen/Adapter_sub_text"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/ll_newlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:padding="4dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_below="@id/CB_terms"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Tv_terms"
+                android:fontFamily="@font/secular_one"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/terms_and_conditionsonline"
+                android:textStyle="bold"
+                android:textColor="@color/greenaccent1"
+                android:textSize="@dimen/Adapter_sub_text"
+                />
+
+            <TextView
+                android:id="@+id/Tv_privacypolicy"
+                android:fontFamily="@font/secular_one"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:textColor="@color/greenaccent1"
+                android:text="@string/privacy_policyonline"
+                android:textSize="@dimen/Adapter_sub_text"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_refund"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_newlayout"
+            android:weightSum="2"
+            android:layout_marginStart="10dp"
+            android:padding="4dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Tv_refundpolicy"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/greenaccent1"
+                android:fontFamily="@font/secular_one"
+                android:text="@string/refund_policyonline"
+                android:textStyle="bold"
+                android:textSize="@dimen/Adapter_sub_text"
+                />
+
+            <TextView
+                android:id="@+id/Tv_cancelpolicy"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textColor="@color/greenaccent1"
+                android:text="@string/cancellation_policyonline"
+                android:fontFamily="@font/secular_one"
+                android:textSize="@dimen/Adapter_sub_text"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_allonline_list"
+            android:background="@color/greyColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textStyle="bold"
+            android:enabled="false"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/Common_button"
+            android:text="@string/rechargeonline" />
+
+    </RelativeLayout>-->
+
+
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+
+        <EditText
+            android:id="@+id/orderamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="amount"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_margin="20dp"
+            android:inputType="number"/>
+
+
+        <Button
+            android:id="@+id/startpayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#02b89a"
+            android:text="Start Payment"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    -->

@@ -1,0 +1,18 @@
+<resources>
+    <!--dimes for design 3-->
+    <dimen name="headerTextSize">22sp</dimen>
+    <dimen name="newsMoreTextSize">12sp</dimen>
+    <dimen name="loginCardRadius">20dp</dimen>
+    <dimen name="loginViewsMargin">20dp</dimen>
+    <dimen name="loginViews">15dp</dimen>
+
+    <dimen name="signup_text_margin_top">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="Subheader_text">13dp</dimen>
+
+    <dimen name="textsize">15dp</dimen>
+    <dimen name="linerpad">15dp</dimen>
+    <dimen name="text_Content">20dp</dimen>
+
+
+</resources>

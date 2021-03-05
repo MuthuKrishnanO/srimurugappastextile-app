@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">Murugappas</string>
+
+    <!--Login Activity-->
+    <string name="login_activity_et_user_name">MobileNumber</string>
+    <string name="login_activity_et_pass_word">Password</string>
+    <string name="login_activity_remberPassword">Remember</string>
+    <string name="btn_login">Login</string>
+
+
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">Email</string>
+    <string name="mobilenumber">Mobile Number</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint"> Agent Login</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">You dont have any Notifications right Now! </string>
+    <string name="total">TOTAL</string>
+    <string name="cart">Cart</string>
+    <string name="Cash">Cash</string>
+    <string name="payment">Select the Payment</string>
+    <string name="Changedue">Change due</string>
+    <string name="BillGenerator">Bills </string>
+    <string name="sumoftotal">Sum Of Total</string>
+    <string name="Totalpaidamount">Paid Amount</string>
+
+    <string name="btn_get">get</string>
+    <string name="rechargehistory1">Bill history</string>
+    <string name="btn_start_date">Start Date</string>
+    <string name="btn_end_date">End Date</string>
+    <string name="mng_pkg_spn_choose_plan">Branch</string>
+    <string name="otpmessage">OTP has been sent to you on your mobile phone. Please enter it below</string>
+    <string name="code">code</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_photos">Photos</string>
+    <string name="nav_movies">Movies</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about_us">About Us</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Gold Scheme</item>
+
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="SchemeDetails">Saving Scheme Details</string>
+    <string name="newsavingschem">New Saving Scheme</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="title_home">Home</string>
+    <string name="title_history">Setting</string>
+    <string name="scheme">Scheme</string>
+    <string name="Notificaton">Notifications</string>
+    <string name="permonth">Per Month</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_proceed">PayNow</string>
+    <string name="JoinnewScheme">JOIN NEW SCHEME</string>
+    <string name="branchName">Branch Name</string>
+    <string name="schemename">Scheme Name</string>
+    <string name="amount">Amount</string>
+    <string name="todaydurration">Total Duration</string>
+
+
+    <string name="terms_and_conditionsonline">Terms and Conditions</string>
+    <string name="rechargeonline">Pay Now</string>
+    <string name="privacy_policyonline">Privacy Policy</string>
+    <string name="refund_policyonline">Refund Policy</string>
+    <string name="cancellation_policyonline">Cancellation Policy</string>
+    <string name="i_accept_terms_and_conditionsonline">I accept the terms and conditions</string>
+    <string name="startdate">StartMonth</string>
+    <string name="enddate">EndMonth</string>
+    <string name="join">Join</string>
+    <string name="about">About</string>
+    <string name="toolbar_logout">Logout</string>
+    <string name="m_settings_change_pass">Change Password</string>
+    <string name="Personal">Personal Information</string>
+    <string name="Addnew">Pay Exisitng  Scheme</string>
+    <string name="Existing">Existing Gold Scheme Update</string>
+    <string name="OnlineRecharge">Online Recharge</string>
+    <string name="Update">Personal Settings</string>
+    <string name="Daily">Bill History</string>
+    <string name="oldpassword">Old Password</string>
+    <string name="newpassword">New Password</string>
+    <string name="ok">YES</string>
+    <string name="Change">Change</string>
+    <string name="edit">Edit</string>
+
+
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="pincode">Pincode</string>
+    <string name="profftype">ProofType</string>
+    <string name="proofnumber">Aadhaar card Number</string>
+    <string name="nominee">Nominee(EX:wife,brother)</string>
+    <string name="dob">Date of birth</string>
+    <string name="panno">PAN Number</string>
+    <string name="save">SAVE</string>
+    <string name="branch">Branch </string>
+    <string name="Name">  Name</string>
+    <string name="Duration">Duration</string>
+    <string name="pdf">pdf</string>
+    <string name="selectthescheme">Choose Scheme</string>
+    <string name="ForgetPassword">Forget Password</string>
+    <string name="regmobilenumber">Enter your Register Mobile Number</string>
+    <string name="request">Request</string>
+    <string name="btn_Cash">Cash</string>
+    <string name="gram">Gram</string>
+    <string name="myGoldgramDetails">My Gold Gram</string>
+    <string name="customize">Customize</string>
+    <string name="Total">"gold 22k/gold 24k "</string>
+
+    <string name="CustomerScheme">customize Scheme</string>
+    <string name="enteryouramount">Enter your Scheme amount above 100</string>
+    <string name="address1">Address1</string>
+    <string name="nomineename">Nominee Name</string>
+    <string name="gold22k">Total gold  22k</string>
+    <string name="gold24k">Total gold  24k</string>
+    <string name="totalamount">Total Amount</string>
+    <string name="myscheme">My Scheme</string>
+    <string name="customer">CustomerId</string>
+    <string name="payagnet">PayAgent</string>
+
+
+</resources>
